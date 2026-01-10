@@ -1,6 +1,5 @@
-﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/Site.master"
-AutoEventWireup="true" CodeBehind="indexHome.aspx.cs"
-Inherits="DentalClinic.Home" %>
+﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/Site.Master"
+    AutoEventWireup="true" CodeBehind="indexHome.aspx.cs" Inherits="SmileClinic.Home" %>
 
 <asp:Content ID="MainContentArea"
     ContentPlaceHolderID="MainContent"

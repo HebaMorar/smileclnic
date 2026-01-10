@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DentalClinic
+namespace SmileClinic
 {
 
 
-    public partial class SCmaster
+    public partial class Sitemaster
     {
 
         /// <summary>
