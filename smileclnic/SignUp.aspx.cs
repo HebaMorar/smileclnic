@@ -1,17 +1,40 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using System.Configuration;
+using System.Data.SqlClient;
 
-namespace smileclnic
+namespace SmileCare
 {
-    public partial class Signin : System.Web.UI.Page
+    public partial class Signup : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        protected void btnSignup_Click(object sender, EventArgs e)
         {
+            if (!Page.IsValid)
+                return;
 
+            if (txtPassword.Text != txtConfirm.Text)
+            {
+                lblMessage.Text = "Passwords do not match";
+                return;
+            }
+
+            string cs = ConfigurationManager.ConnectionStrings["ClinicDB"].ConnectionString;
+
+            using (SqlConnection con = new SqlConnection(cs))
+            {
+                string query = @"INSERT INTO Users (Name, Email, Password)
+                         VALUES (@Name, @Email, @Password)";
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@Name", txtName.Text);
+                cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
+                cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
+
+                con.Open();
+                cmd.ExecuteNonQuery();
+            }
+
+            Response.Redirect("Login.aspx");
         }
+
     }
 }
