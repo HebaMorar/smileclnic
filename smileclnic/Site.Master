@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SmileCare Clinic</title>
     <link href="Style/MasterStyle.css" rel="stylesheet" >
+    <link href="Style/StyleSignUp.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">

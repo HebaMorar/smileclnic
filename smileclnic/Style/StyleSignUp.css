@@ -1,0 +1,100 @@
+﻿/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== PAGE BACKGROUND ===== */
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #b3d4ff, #e4c7ff);
+}
+
+/* ===== CARD ===== */
+.auth-card {
+    background: #fff;
+    width: 380px;
+    padding: 35px 30px;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+    /* ===== TITLE ===== */
+    .auth-card h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+        color: #111;
+    }
+
+/* ===== TOGGLE BUTTONS ===== */
+.auth-toggle {
+    display: flex;
+    background: #f1f1f1;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+    .auth-toggle a {
+        flex: 1;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+    }
+
+    .auth-toggle .active {
+        background: linear-gradient(135deg, #0d47a1, #1976d2);
+        color: #fff;
+    }
+
+/* ===== INPUTS ===== */
+.auth-input {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+    .auth-input:focus {
+        outline: none;
+        border-color: #1976d2;
+    }
+
+/* ===== BUTTON ===== */
+.auth-btn {
+    width: 100%;
+    padding: 13px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #0d47a1, #1976d2);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+    .auth-btn:hover {
+        opacity: 0.95;
+    }
+
+/* ===== FOOTER TEXT ===== */
+.auth-footer {
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+    .auth-footer a {
+        color: #1976d2;
+        text-decoration: none;
+        font-weight: 500;
+    }
