@@ -98,3 +98,199 @@
         text-decoration: none;
         font-weight: 500;
     }
+
+    /* ===== PAGE BACKGROUND ===== */
+body {
+    background: linear-gradient(120deg, #b3d4ff, #e4c7ff);
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== CARD ===== */
+.auth-container {
+    max-width: 380px;
+    margin: 100px auto;
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/* ===== TITLE ===== */
+.auth-container h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.auth-container p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* ===== INPUTS ===== */
+.inputBox {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 14px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.inputBox:focus {
+    outline: none;
+    border-color: #1976d2;
+}
+
+/* ===== VALIDATION MESSAGES ===== */
+span[id*="rfv"],
+span[id*="rev"],
+span[id*="cv"] {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #e53935;
+}
+
+/* ===== BUTTON ===== */
+.auth-btn {
+    width: 100%;
+    padding: 13px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #0d47a1, #1976d2);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.auth-btn:hover {
+    opacity: 0.95;
+}
+
+/* ===== FOOTER LINK ===== */
+.auth-container a {
+    display: inline-block;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: 500;
+}
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== PAGE BACKGROUND ===== */
+body {
+    min-height: 100vh;
+    background: linear-gradient(120deg, #a7c7ff, #d9c7ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== AUTH CARD ===== */
+.auth-container {
+    width: 380px;
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 20px;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+    /* ===== TITLE ===== */
+    .auth-container h2 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        color: #000;
+    }
+
+/* ===== TOGGLE (LOGIN / SIGNUP) ===== */
+.auth-toggle {
+    display: flex;
+    background: #f1f1f1;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+    .auth-toggle a {
+        flex: 1;
+        padding: 10px 0;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+    }
+
+    .auth-toggle .active {
+        background: linear-gradient(135deg, #003f88, #0077ff);
+        color: #fff;
+    }
+
+/* ===== INPUTS ===== */
+.inputBox {
+    width: 100%;
+    padding: 14px 18px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+    .inputBox:focus {
+        outline: none;
+        border-color: #0077ff;
+    }
+
+/* ===== BUTTON ===== */
+.auth-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #003f88, #0077ff);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+    .auth-btn:hover {
+        opacity: 0.95;
+    }
+
+/* ===== FOOTER TEXT ===== */
+.auth-footer {
+    margin-top: 18px;
+    font-size: 14px;
+    color: #333;
+}
+
+    .auth-footer a {
+        color: #0077ff;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+/* ===== VALIDATION ===== */
+span[id*="rfv"],
+span[id*="cv"],
+span[id*="rev"] {
+    display: block;
+    color: #e53935;
+    font-size: 12px;
+    margin-bottom: 8px;
+}

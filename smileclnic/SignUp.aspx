@@ -6,7 +6,7 @@
 <div class="auth-page">
     <div class="auth-card">
 
-        <h2>Signup Form</h2>
+        <h2>Sign Up</h2>
 
         <div class="auth-toggle">
             <a href="Login.aspx">Login</a>
@@ -26,7 +26,7 @@
             CssClass="auth-input" TextMode="Password" Placeholder="Confirm Password" />
 
         <asp:Button ID="btnSignup" runat="server"
-            Text="Signup" CssClass="auth-btn" />
+            Text="Sign up" CssClass="auth-btn" />
 
         <div class="auth-footer">
             Already have an account?
