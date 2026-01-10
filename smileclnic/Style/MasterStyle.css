@@ -239,3 +239,88 @@ section Dr {
         color: #4A5568;
         margin-bottom: 10px;
     }
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    color: #1A365D; /* أزرق كحلي */
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+    background: #d9d8d6;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* ===== CARD ===== */
+.contact-card {
+    background: #ffffff;
+    width: 900px;
+    padding: 50px;
+    display: flex;
+    gap: 50px;
+    border-radius: 6px;
+}
+
+/* ===== LEFT INFO ===== */
+.contact-info {
+    width: 40%;
+}
+
+    .contact-info h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+        color: #1A365D;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+        margin-bottom: 18px;
+        color: #4A5568;
+        line-height: 1.6;
+    }
+
+/* ===== RIGHT FORM ===== */
+.contact-form {
+    width: 60%;
+}
+
+    .contact-form .row {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 12px 15px;
+        border: none;
+        border-radius: 6px;
+        background: #f5f5f5;
+        font-size: 14px;
+    }
+
+    .contact-form textarea {
+        height: 120px;
+        resize: none;
+        margin-bottom: 20px;
+    }
+
+    /* ===== BUTTON ===== */
+    .contact-form button {
+        width: 180px;
+        padding: 12px;
+        background: #F687B3;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+        .contact-form button:hover {
+            opacity: 0.9;
+        }
