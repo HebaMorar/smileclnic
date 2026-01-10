@@ -1,0 +1,241 @@
+﻿/* ====== General Reset ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ====== Body ====== */
+body {
+    background-color: #F7FAFC; /* خلفية أساسية */
+    color: #4A5568; /* النصوص الثانوية */
+}
+
+/* ====== Navbar ====== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #F7FAFC;
+    border-bottom: 2px solid #1A365D;
+}
+
+h1 {
+    color: #1A365D;
+}
+
+li {
+    color: #4A5568;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+    .navbar .logo img {
+        width: 50px;
+        margin-right: 10px;
+    }
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+    .navbar nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+        .navbar nav ul li a:hover {
+            color: #63B3ED; /* لون التفاعل */
+        }
+
+/* ====== Login Button ====== */
+.btn-login {
+    background-color: #F687B3; /* اللون الثانوي */
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+    .btn-login:hover {
+        background-color: #63B3ED; /* Hover */
+    }
+
+/* ====== Footer ====== */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1A365D;
+    color: white;
+    margin-top: 30px;
+}
+/************* Home style *************/
+/* ====== General Reset ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ====== Body ====== */
+body {
+    background-color: #F7FAFC;
+    color: #4A5568;
+}
+
+/* ====== HERO SECTION ===== */
+.hero {
+    background-image: url('../img/backgroundh.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 80px 20px;
+    color: #1A365D;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+    .hero-content h1 {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+.hero-text {
+    font-size: 20px;
+    color: #4A5568;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #F687B3;
+    color: white;
+}
+
+    .btn-primary:hover {
+        background-color: #63B3ED;
+    }
+
+.btn-secondary {
+    background-color: #1A365D;
+    color: white;
+}
+
+    .btn-secondary:hover {
+        background-color: #63B3ED;
+    }
+
+/* ====== FEATURES SECTION ===== */
+.Dr {
+    background-color: #F7FAFC;
+    padding: 60px 20px;
+}
+
+.Dr {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 6.25rem auto;
+    width: 100%;
+    max-width: 75rem;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+
+section Dr {
+    margin: 6.25rem auto;
+    width: 100%;
+    max-width: 75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.Dr-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+    padding: 20px;
+    margin: 0.625rem;
+    padding: 0.3125rem;
+    width: calc(30% - 1.25rem);
+    box-sizing: border-box;
+}
+
+    .Dr-card :hover {
+        transform: translateY(-10px);
+    }
+
+    .Dr-card img {
+        height: 130px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    .Dr-card h3 {
+        color: #1A365D;
+        margin-bottom: 10px;
+    }
+
+    .Dr-card p {
+        color: #4A5568;
+    }
+
+/* ====== CONTACT SECTION ===== */
+.contact-us {
+    background-color: #F7FAFC;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+    .contact-us h2 {
+        color: #1A365D;
+        margin-bottom: 15px;
+    }
+
+    .contact-us p {
+        color: #4A5568;
+        margin-bottom: 20px;
+    }
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+    .contact-list li {
+        font-size: 18px;
+        color: #4A5568;
+        margin-bottom: 10px;
+    }
