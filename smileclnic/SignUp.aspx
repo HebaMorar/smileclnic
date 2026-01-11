@@ -6,7 +6,7 @@
 <div class="auth-page">
     <div class="auth-card">
 
-        <h2>Signup Form</h2>
+        <h2>Sign Up</h2>
 
         <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>
 
@@ -37,8 +37,12 @@
             ForeColor="Red" />
 
         <asp:Button ID="btnSignup" runat="server"
-            Text="Signup" CssClass="auth-btn"
-            OnClick="btnSignup_Click" />
+            Text="Signup" CssClass="auth-btn" />
+
+        <div class="auth-footer">
+            Already have an account?
+            <a href="Login.aspx">Login</a>
+        </div>
 
     </div>
 </div>
