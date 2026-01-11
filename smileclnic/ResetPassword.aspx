@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="Reset Password" Language="C#" MasterPageFile="~/Site.master"
-    AutoEventWireup="true" CodeBehind="ForgotPassword.aspx.cs" Inherits="smile2.ForgotPassword" %>
+    AutoEventWireup="true" CodeBehind="ForgotPassword.aspx.cs" Inherits="smileclnic.ForgotPassword" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 

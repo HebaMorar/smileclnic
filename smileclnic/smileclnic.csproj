@@ -68,8 +68,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="img\BackgroundH.jpg" />
+    <Content Include="img\Clinic.jpg" />
+    <Content Include="img\Dr. Ahmad Khaled.png" />
+    <Content Include="img\Dr. Lina Mahmoud.png" />
+    <Content Include="img\Dr. Omar Al-Hassan.png" />
+    <Content Include="img\SClogo.jpg" />
+    <Content Include="img\scteeth.jpg" />
     <Content Include="indexHome.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="Profile.aspx" />
     <Content Include="ResetPassword.aspx" />
     <Content Include="SignUp.aspx" />
     <Content Include="Style\MasterStyle.css" />
@@ -90,6 +97,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResetPassword.aspx.cs">

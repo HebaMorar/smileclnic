@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SmileCare
+namespace SmileClinic
 {
 
 

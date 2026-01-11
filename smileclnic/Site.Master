@@ -18,11 +18,11 @@
             </div>
             <nav>
                 <ul>
-                    <li>Book Appointment</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                    <li>Login</li>
-                    <li>Profile</li>
+             <li><a href="BookAppointment.aspx">Book Appointment</a></li>
+            <li><a href="AboutUs.aspx">About Us</a></li>
+<li><a href="indexHome.aspx#contact-section">Contact Us</a></li>
+            <li><a href="Login.aspx">Login</a></li>
+            <li><a href="Profile.aspx">Profile</a></li>
                 </ul>
             </nav>
         </header>

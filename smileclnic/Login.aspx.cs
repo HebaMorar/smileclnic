@@ -1,44 +1,28 @@
 ﻿using System;
-using System.Configuration;
-using System.Data.SqlClient;
+using System.Web.UI;
 
 namespace SmileCare
 {
-    public partial class Login : System.Web.UI.Page
+    public partial class Login : Page
     {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+        }
+
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            string cs = ConfigurationManager.ConnectionStrings["ClinicDB"].ConnectionString;
+            string email = txtEmail.Text.Trim();
+            string password = txtPassword.Text.Trim();
 
-            using (SqlConnection con = new SqlConnection(cs))
+            // مثال تجريبي (لاحقًا Database)
+            if (email == "test@gmail.com" && password == "1234")
             {
-                string query = "SELECT Id, Name FROM Users WHERE Email=@Email AND Password=@Password";
-
-                SqlCommand cmd = new SqlCommand(query, con);
-                cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
-                cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
-
-                con.Open();
-                SqlDataReader dr = cmd.ExecuteReader();
-
-                if (dr.Read())
-                {
-                    // تخزين الجلسة
-                    Session["UserId"] = dr["Id"];
-                    Session["UserName"] = dr["Name"];
-
-                    Response.Redirect("Default.aspx");
-                }
-                else
-                {
-                    // رسالة خطأ
-                    ClientScript.RegisterStartupScript(
-                        this.GetType(),
-                        "alert",
-                        "alert('Invalid email or password');",
-                        true
-                    );
-                }
+                Session["UserEmail"] = email;
+                Response.Redirect("Home.aspx");
+            }
+            else
+            {
+                lblMessage.Text = "Invalid email or password";
             }
         }
     }

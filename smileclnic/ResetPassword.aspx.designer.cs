@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace smile2
+namespace smileclnic
 {
 
 
