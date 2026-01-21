@@ -18,8 +18,9 @@
             </div>
             <nav>
                 <ul>
-             <li><a href="BookAppointment.aspx">Book Appointment</a></li>
-            <li><a href="AboutUs.aspx">About Us</a></li>
+                    <li><a href="indexHome.aspx">Home</a></li>
+             <li><a href="Appointment.aspx">Book Appointment</a></li>
+            <li><asp:HyperLink runat="server" NavigateUrl="~/indexHome.aspx#doctors-section" Text="About Us" /></li>
 <li><a href="indexHome.aspx#contact-section">Contact Us</a></li>
             <li><a href="Login.aspx">Login</a></li>
             <li><a href="Profile.aspx">Profile</a></li>

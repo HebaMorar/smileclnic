@@ -67,11 +67,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Appointment.aspx" />
     <Content Include="img\BackgroundH.jpg" />
     <Content Include="img\Clinic.jpg" />
     <Content Include="img\Dr. Ahmad Khaled.png" />
     <Content Include="img\Dr. Lina Mahmoud.png" />
     <Content Include="img\Dr. Omar Al-Hassan.png" />
+    <Content Include="img\profileimg.jfif" />
     <Content Include="img\SClogo.jpg" />
     <Content Include="img\scteeth.jpg" />
     <Content Include="indexHome.aspx" />
@@ -84,6 +86,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Appointment.aspx.cs">
+      <DependentUpon>Appointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appointment.aspx.designer.cs">
+      <DependentUpon>Appointment.aspx</DependentUpon>
+    </Compile>
     <Compile Include="indexHome.aspx.cs">
       <DependentUpon>indexHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
