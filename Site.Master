@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="SmileClinic.Sitemaster" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmileCare Clinic</title>
+    <link href="Style/MasterStyle.css" rel="stylesheet" >
+    <link href="Style/StyleSignUp.css" rel="stylesheet" />
+</head>
+<body>
+    <form runat="server">
+        <!-- Navbar -->
+        <header class="navbar">
+            <div class="logo">
+                <img src="img/scteeth.jpg" />
+                <h1>SmileCare</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="indexHome.aspx">Home</a></li>
+             <li><a href="Appointment.aspx">Book Appointment</a></li>
+            <li><asp:HyperLink runat="server" NavigateUrl="~/indexHome.aspx#doctors-section" Text="About Us" /></li>
+<li><a href="indexHome.aspx#contact-section">Contact Us</a></li>
+            <li><a href="Login.aspx">Login</a></li>
+            <li><a href="Profile.aspx">Profile</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Dental Clinic. All rights reserved.</p>
+        </footer>
+    </form>
+</body>
+</html>

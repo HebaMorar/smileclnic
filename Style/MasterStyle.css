@@ -1,0 +1,416 @@
+﻿/* Styles for Appointment Section */
+.appointment-section {
+    padding: 40px 0;
+    background: #f8f9fa;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background: #42a5f5;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    .btn-primary:hover {
+        background: #1e88e5;
+    }
+
+.appointments-grid {
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+    .appointments-grid th {
+        background: #42a5f5;
+        color: white;
+        padding: 12px;
+        text-align: left;
+    }
+
+    .appointments-grid td {
+        padding: 12px;
+        border-bottom: 1px solid #eee;
+    }
+
+.status-pending {
+    background: #ff9800;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.status-confirmed {
+    background: #4caf50;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.status-cancelled {
+    background: #f44336;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.btn-cancel {
+    background: #f44336;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+    .btn-cancel:hover {
+        background: #d32f2f;
+    }
+
+.alert {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.alert-warning {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+.alert-info {
+    background: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+
+
+/* ====== General Reset ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ====== Body ====== */
+body {
+    background-color: white; /* خلفية أساسية */
+    color: #4A5568; /* النصوص الثانوية */
+}
+
+/* ====== Navbar ====== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #F7FAFC;
+    border-bottom: 2px solid #1A365D;
+    margin-bottom:0;
+}
+
+h1 {
+    color: #1A365D;
+}
+
+li {
+    color: #4A5568;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+    .navbar .logo img {
+        width: 50px;
+        margin-right: 10px;
+    }
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+    .navbar nav ul li a {
+        color: color: #1A365D;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+        .navbar nav ul li a:hover {
+            color: #63B3ED; /* لون التفاعل */
+        }
+
+/* ====== Login Button ====== */
+.btn-login {
+    background-color: #F687B3; /* اللون الثانوي */
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+    .btn-login:hover {
+        background-color: #63B3ED; /* Hover */
+    }
+
+/* ====== Footer ====== */
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #1A365D;
+    color: white;
+    margin-top: 0px;
+}
+/************* Home style *************/
+/* ====== General Reset ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ====== Body ====== */
+body {
+    background-color: #F7FAFC;
+    color: #4A5568;
+}
+
+/* ====== HERO SECTION ===== */
+.hero {
+    background-image: url('../img/backgroundh.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    min-height: 80vh;
+    padding: 40px 20px;
+    color: #1A365D;
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    align-items: center; /* توسيط عمودي */
+    justify-content: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+    .hero-content h1 {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+.hero-text {
+    font-size: 20px;
+    color: #4A5568;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #F687B3;
+    color: white;
+}
+
+    .btn-primary:hover {
+        background-color: #63B3ED;
+    }
+
+.btn-secondary {
+    background-color: #1A365D;
+    color: white;
+}
+
+    .btn-secondary:hover {
+        background-color: #63B3ED;
+    }
+/* ====== DOCTORS SECTION ===== */
+.Dr {
+    padding: 60px 20px 80px 20px;
+    text-align: center;
+    background-color: #fff;
+    width: 100%;
+}
+
+    .Dr .section-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+        color: #4facfe;
+    }
+
+.Dr p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #4A5568;
+}
+
+.Dr-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+    .Dr-card article {
+        background-color: #f1f5f9;
+        padding: 20px;
+        width: 30%;
+        min-width: 250px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+    }
+
+        .Dr-card article:hover {
+            transform: translateY(-5px);
+        }
+
+    .Dr-card img {
+        width: 100%;
+        border-radius: 15px;
+        margin-bottom: 15px;
+    }
+
+    .Dr-card h3 {
+        margin: 10px 0 5px;
+        font-size: 1.2rem;
+    }
+
+    .Dr-card h4 {
+        margin-bottom: 10px;
+        color: #777;
+        font-weight: 400;
+    }
+
+/* ====== CONTACT SECTION ===== */
+.contact-section {
+    padding: 60px 20px 60px 20px;
+    margin-bottom: 0;
+    background-color: #e9f6ff;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+    .contact-info h2 {
+        color: #4facfe;
+        margin-bottom: 20px;
+    }
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form .btn {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 12px 15px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 1rem;
+        box-sizing: border-box;
+    }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #4facfe;
+            outline: none;
+        }
+
+    .contact-form .btn {
+        background-color: #4facfe;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+        .contact-form .btn:hover {
+            background-color: #00c0ff;
+        }
+
+/* ===== LABEL MESSAGES ===== */
+#lblMessage {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
